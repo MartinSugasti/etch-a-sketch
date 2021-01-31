@@ -1,0 +1,78 @@
+:root {
+  --grid-size: 16;
+}
+
+html, body {
+  /* height: 100%; */
+}
+
+body {
+  padding: 20px;
+  font-family: cursive;
+}
+
+h1 {
+  font-family: cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+#containers {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  height: 40vw;
+  width: 40vw;
+  justify-self: center;
+}
+
+#controls-container {
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+}
+
+#clear-controls, #size-controls, #color-controls {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#size-value, #color-value {
+  margin-top: 0;
+}
+
+#erase-note {
+  margin-top: 0;
+  font-size: 11px;
+}
+
+#pen-option-form {
+  text-align: left;
+  font-size: 14px;
+}
+
+#color-picker {
+  text-align: center;
+}
+
+#color-picker-option {
+  display: flex;
+  margin-top: 5px;
+}
+
+button {
+  font-family: cursive;
+}
+
