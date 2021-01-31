@@ -7,6 +7,42 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <h1>Etch a sketch</h1>
+    <div id="containers">
+      <div id="controls-container">
+        <div id="clear-controls">
+          <p id="clear-paragraph">Want to restart?</p>
+          <button id="clear">Clear</button>
+        </div>
+
+        <div id="size-controls">
+          <p id="size-value">Grid size: <span id="size-span"></span></p>
+          <input type="range" min="1" max="100" value="16" id="range">
+        </div>
+
+        <div id="color-controls">
+          <p id="color-value">Pen color:</p>
+
+          <form id="pen-option-form">
+            <div id="rainbow-option">
+              <input type="radio" name="color" id="rainbow-radio" value="rainbow">
+              <label for="rainbow">Rainbow</label><br>
+            </div>
+
+            <div id="color-picker-option">
+              <input type="radio" name="color" id= "picker-radio" value="picker" checked>
+              <label for="color-picker"> Pick a color</label>
+              <div id="color-picker">
+                <input type="color" value="#000000" id="color">
+                <p id="erase-note">* Use white to erase</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="grid-container"></div>
+    </div>
 
     <script src="scripts/main.js"></script>
   </body>
